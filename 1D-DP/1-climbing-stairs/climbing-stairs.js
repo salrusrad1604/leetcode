@@ -23,6 +23,25 @@ var climbStairs = function (n) {
   return count;
 };
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Лучшее решение
+// var climbStairs = function (n) {
+//   const cache = new Map();
+
+//   function helper(h) {
+//     if (h === 1) return 1;
+//     if (h === 2) return 2;
+//     if (cache.has(h)) return cache.get(h);
+
+//     const value = helper(h - 1) + helper(h - 2);
+//     cache.set(h, value);
+//     return value;
+//   }
+
+//   return helper(n);
+// };
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // const data = 2; // => 2
 // const data = 3; // => 3
 // const data = 5; // => 8
